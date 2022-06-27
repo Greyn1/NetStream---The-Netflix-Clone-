@@ -1,0 +1,105 @@
+$title-color: #cfd6e1;
+$primary-color: #9ac7fa;
+$secondary-color: #2a9fff;
+
+.movie-details-container{
+    margin: 0;
+    padding-top: 0px;
+    color: $secondary-color;
+    img{
+        height: 660px;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+// .fade{
+//     height: 200px;
+//     background-image: linear-gradient(90deg, transparent, rgba(27,27,27,0.61), #111);
+//     z-index: 10;
+//     position: absolute;
+//     bottom: 0;
+//     top: 470px;
+//     width: 100%;
+// }
+
+.movie-details-overlay{
+    width: 100%;
+    height: 660px;
+    background: linear-gradient(286deg, rgba(213, 215, 217, 0.107) 0%,rgba(39, 39, 38, 0.518) 50%,rgba(33,33,32,1) 100%);
+	background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.info-container{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: left;
+    padding-left: 50px;
+}
+
+.info-title-container{
+    color: $title-color;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    opacity: 0.75;
+}
+
+.info-extras-container{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+}
+
+.info-extras-tagline{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.movie-icons-container{
+    padding: 3px 0;
+    color: $secondary-color;
+    display: inline-block;
+    span{
+        padding-right: 3px;
+    }
+}
+
+.overview-container{
+    width: 25%;
+    color: $primary-color;
+    font-style: italic;
+    text-align: left;
+    opacity: 0.7;
+    p{
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            opacity: 1;
+            color: whitesmoke;
+        }
+    }
+}
+
+.link-btn{
+    background-color: rgba(255,255,255,.05);
+	color: rgba(255,255,255,0.5);
+	border: 2px solid $title-color;
+    padding: 10px 0;
+    padding-right: 20px;
+    padding-left: 15px;
+    transition: all .2s ease-in-out;
+    justify-content: center;
+    &:hover{
+        border-color: $secondary-color;
+	    color: $secondary-color;
+        transform: scale(1.04);
+    }
+}

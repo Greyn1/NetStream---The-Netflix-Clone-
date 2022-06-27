@@ -1,0 +1,22 @@
+.category-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    h2{
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+.movie-cards-container{
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.movie-cards-container::-webkit-scrollbar{
+    display: none;
+}
