@@ -6,10 +6,3 @@ export const setMovieData = (movieData) => {
         payload: movieData 
     }
 }
-
-export const toggleIsViewingMovie = (bool) => {
-    return {
-        type: VIEW_MOVIE_ACTION_TYPES.Toggle_Is_Viewing_Movie,
-        payload: bool
-    }
-}
