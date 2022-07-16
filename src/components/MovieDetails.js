@@ -37,7 +37,7 @@ const MovieDetails = () => {
                                 </div>
                                 <div className="info-extras-container">
                                     <div className="info-extras-tagline"><i>{movieData.tagline}</i></div>
-                                    <div>{movieData.genres.map((genre) => <i>{`${genre.name} `}</i>)}</div>
+                                    <div>{movieData.genres.map((genre) => <i>{`${genre.name}`} </i>)}</div>
                                     <div className="movie-icons-container">
                                         <AccessTimeIcon /><span>{` ${movieData.runtime}min.`}</span>
                                         <StarRateIcon /><span>{` ${movieData.vote_average.toFixed(1)}`}</span>

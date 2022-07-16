@@ -3,13 +3,13 @@ import StarRateIcon from '@mui/icons-material/StarRate';
 import { Link } from 'react-router-dom';
 import "../styles/MovieCard.scss";
 
-const MovieCard = ({ id, poster_path, overview, vote_average, original_language }) => {
+const MovieCard = ({ id, name, poster_path, overview, vote_average, original_language }) => {
     const imgUrl = `https://image.tmdb.org/t/p/w342${poster_path}`
     return (
             <Link to={`/${id}`} style={{textDecoration:"none"}}>
         <div className="movie-card-container">
                 <div className="img-container">
-                    <img src={imgUrl} alt="" />
+                    <img src={imgUrl} alt={name} />
                 </div>
                 <div className="paragraph-container">
                     <p>{overview}</p>
